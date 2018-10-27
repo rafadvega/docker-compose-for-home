@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  samba:
+    image: dperson/samba
+    container_name: samba-server
+    environment:
+      - WORKGROUP=WORKGROUP
+    tmpfs:
+      - /tmp
+    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+      - "139:139"
+      - "445:445"
+    volumes:
+      - <your path to share>:/media/<folder-name>:z
+    command: '-u "<user>;<password>" -s "<folder-name>;/media/<folder-name>;yes;no;no;<user>" -S'
