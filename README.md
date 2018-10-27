@@ -8,4 +8,5 @@ You must sustitute \<variable-name> by your own parameters.
 
 ## List
 
-* Server Samba
+* Plex server
+* Samba server

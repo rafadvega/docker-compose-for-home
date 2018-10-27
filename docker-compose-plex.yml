@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  plex:
+    image: linuxserver/plex
+    container_name: plex  
+    restart: always
+    tty: true
+    network_mode: "host"
+    volumes:
+      - <your path to the plex library>:/config:z
+      - <your movies path>:/data/movies:z
+      - <your tvshows path>:/data/tvshows:z
