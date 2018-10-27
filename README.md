@@ -1,2 +1,9 @@
 # docker-compose-for-home
-docker-compose compilation
+
+## Instructions
+
+This repository is a compilation of docker-compose files to differents services that you can deploy in your home.
+
+You must sustitute \<variable-name> by your own parameters.
+
+## List
