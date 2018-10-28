@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  transmission:
+    image: linuxserver/transmission
+    container_name: transmission
+    restart: always
+    tty: true
+    ports:
+      - "9091:9091"
+      - "51413:51413"
+      - "51413:51413/udp"
+    volumes:
+      - <path to data>:/config 
+      - <path to downloads>:/downloads 
+      - <path to watch folder>:/watch 

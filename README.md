@@ -9,4 +9,5 @@ You must sustitute \<variable-name> by your own parameters.
 ## List
 
 * Plex server
+* Transmission
 * Samba server
