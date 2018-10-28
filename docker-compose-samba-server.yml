@@ -6,6 +6,8 @@ services:
     container_name: samba-server
     environment:
       - WORKGROUP=WORKGROUP
+      - PGID=<pgid>
+      - PUID=<ugid>
     tmpfs:
       - /tmp
     restart: always

@@ -5,7 +5,10 @@ services:
     image: linuxserver/transmission
     container_name: transmission
     restart: always
-    tty: true
+    tty: true    
+    environment:
+      PGID: <pgid>
+      PUID: <ugid>
     ports:
       - "9091:9091"
       - "51413:51413"
