@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  plex:
+    image: coppit/no-ip
+    container_name: noip  
+    restart: always
+    tty: true
+    environment:
+      PGID: <pgid>
+      PUID: <ugid>
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - <your config path>:/config
