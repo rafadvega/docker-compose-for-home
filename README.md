@@ -9,6 +9,7 @@ You must sustitute \<variable-name> by your own parameters.
 ## List
 
 * No-Ip script
+* Pi-hole
 * Plex server
 * Transmission
 * Samba server

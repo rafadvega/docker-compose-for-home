@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  plex:
+    image: pihole/pihole
+    container_name: pihole  
+    restart: always
+    tty: true
+    environment:
+      PGID: <pgid>
+      PUID: <ugid>
+      ServerIP: <ip-server>
+    cap_add:
+      - NET_ADMIN
+    dns:
+      - 127.0.0.1
+      - 1.1.1.1
+      - 8.8.8.8
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "8080:80"
+    volumes:
+      - <your pihole config path>:/etc/pihole/
+      - <your dnsmasq.d path>:/etc/dnsmasq.d/
