@@ -8,6 +8,7 @@ You must sustitute \<variable-name> by your own parameters.
 
 ## List
 
+* Duck DNS Script
 * No-Ip script
 * Pi-hole
 * Plex server

@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  plex:
+    image: linuxserver/duckdns
+    container_name: duckdns
+    restart: always
+    tty: true
+    environment:
+      PGID: <pgid>
+      PUID: <ugid>
+      SUBDOMAINS: <your domain/s>
+      TOKEN: <your token id>
