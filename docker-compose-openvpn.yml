@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  plex:
+    image: linuxserver/openvpn-as
+    container_name: openvpn-as
+    restart: always
+    tty: true
+    network_mode: "host"
+    privileged: true
+    environment:
+      PGID: <pgid>
+      PUID: <ugid>
+      INTERFACE: <network interface>
+    volumes:
+      - <your openvpn config path>:/config
