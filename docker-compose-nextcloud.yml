@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+  nextcloud:
+    image: linuxserver/nextcloud
+    container_name: nextcloud
+    restart: always
+    tty: true
+    environment:
+      PGID: <pgid>
+      PUID: <ugid>
+    ports:
+      - "8443:443"
+    volumes:
+      - </path/to/appdata>:/config
+      - <path/to/data>:/data
+    networks:
+      - docker_nextcloud
+  database:
+    image: mariadb:10.3
+    hostname: nextcloud_db
+    container_name: nextcloud_db
+    environment:
+      MYSQL_DATABASE: ""
+      MYSQL_USER: ""
+      MYSQL_PASSWORD: ""
+      MYSQL_ROOT_PASSWORD: ""
+    volumes:
+      - </path/to/mariadb-persistence>:/bitnami/mariadb
+    networks:
+      - docker_nextcloud
+
+networks:
+  docker_nextcloud:
