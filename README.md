@@ -10,6 +10,7 @@ You must sustitute \<variable-name> by your own parameters.
 
 * Duck DNS Script
 * No-Ip script
+* Heimdall
 * NextCloud
 * OpenVPN
 * Pi-hole

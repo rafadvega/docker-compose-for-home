@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  heimdall:
+    image: linuxserver/heimdall
+    container_name: heimdall
+    restart: always
+    tty: true
+    environment:
+      PGID: <pgid>
+      PUID: <ugid>
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /home/rdevega/configs/heimdall:/config
