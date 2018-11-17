@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  plex:
+  openvpn:
     image: linuxserver/openvpn-as
     container_name: openvpn-as
     restart: always

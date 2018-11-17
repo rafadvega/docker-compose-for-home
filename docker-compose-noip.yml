@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  plex:
+  noip:
     image: coppit/no-ip
     container_name: noip  
     restart: always
