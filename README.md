@@ -25,6 +25,8 @@ You must sustitute \<variable-name> by your own parameters.
 | 53    | Pi-hole      | tcp/udp  |
 | 63    | Pi-hole      | udp      |
 | 80    | Heimdall     | tcp      |
+| 137   | Samba        | udp      |
+| 138   | Samba        | udp      |
 | 139   | Samba        | udp      |
 | 443   | Heimdall     | udp      |
 | 445   | Samba        | tcp      |
@@ -39,4 +41,4 @@ You must sustitute \<variable-name> by your own parameters.
 | 51413 | Transmission | tcp/udp  |
 | 32400 | Plex         | tcp/udp  |
 
-##### Thans to linuxserver.io
+###### Thans to linuxserver.io

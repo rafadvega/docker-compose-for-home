@@ -4,6 +4,7 @@ services:
   samba:
     image: dperson/samba
     container_name: samba-server
+    hostname: <your server name>
     environment:
       - WORKGROUP=WORKGROUP
       - PGID=<pgid>
@@ -14,6 +15,8 @@ services:
     stdin_open: true
     tty: true
     ports:
+      - "137:137/udp"
+      - "138:138/udp"
       - "139:139"
       - "445:445"
     volumes:
