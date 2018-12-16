@@ -8,6 +8,7 @@ You must sustitute \<variable-name> by your own parameters.
 
 ## List
 
+* Cadvisor
 * Duck DNS Script
 * No-Ip script
 * Heimdall
@@ -36,6 +37,7 @@ You must sustitute \<variable-name> by your own parameters.
 | 5353  | Plex         | udp      |
 | 8443  | NextCloud    | tcp      |
 | 8081  | Pi-hole      | tcp      |
+| 8989  | Cadvisor     | tcp      |
 | 9091  | Transmission | tcp      |
 | 9443  | OpenVPN AS   | tcp      |
 | 51413 | Transmission | tcp/udp  |
