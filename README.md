@@ -12,12 +12,13 @@ You must sustitute \<variable-name> by your own parameters.
 * Duck DNS Script
 * No-Ip script
 * Heimdall
+* Netdata
 * NextCloud
 * OpenVPN
 * Pi-hole
 * Plex server
-* Transmission
 * Samba server
+* Transmission
 
 ## Open Ports
 
@@ -40,6 +41,7 @@ You must sustitute \<variable-name> by your own parameters.
 | 8989  | Cadvisor     | tcp      |
 | 9091  | Transmission | tcp      |
 | 9443  | OpenVPN AS   | tcp      |
+| 19999 | Netdata      | tcp      |
 | 51413 | Transmission | tcp/udp  |
 | 32400 | Plex         | tcp/udp  |
 
