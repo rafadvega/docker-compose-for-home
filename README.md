@@ -42,10 +42,14 @@ You must sustitute \<variable-name> by your own parameters.
 | 8787  | PiGallery    | tcp      |
 | 8888  | PiGallery2   | tcp      |
 | 8989  | Cadvisor     | tcp      |
+| 8895  | Serviio      | tcp      |
 | 9091  | Transmission | tcp      |
 | 9443  | OpenVPN AS   | tcp      |
 | 19999 | Netdata      | tcp      |
-| 51413 | Transmission | tcp/udp  |
+| 23423 | Serviio      | tcp      |
+| 23424 | Serviio      | tcp      |
 | 32400 | Plex         | tcp/udp  |
+| 51413 | Transmission | tcp/udp  |
+
 
 ###### Thans to linuxserver.io

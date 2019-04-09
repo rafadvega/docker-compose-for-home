@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  plex:
+    image: lsiocommunity/serviio:180
+    container_name: serviio
+    tty: true
+    environment:
+      PGID: '1000'
+      PUID: '1000'
+    network_mode: "host"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro 
+      - <path to config>:/config 
+      - <path to media>/media:/media 
+      - <path to transcode>:/transcode
