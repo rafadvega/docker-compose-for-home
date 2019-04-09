@@ -19,6 +19,7 @@ You must sustitute \<variable-name> by your own parameters.
 * Pigallery
 * Plex server
 * Samba server
+* Serviio
 * Transmission
 
 ## Open Ports
