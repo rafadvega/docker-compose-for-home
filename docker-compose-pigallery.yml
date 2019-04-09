@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  pigallery:
+    image: bpatrik/pigallery2:1.5.6-stretch
+    container_name: pigallery
+    restart: always
+    tty: true
+    environment:
+      PGID: '1000'
+      PUID: '1000'
+      NODE_ENV: production
+    ports:
+      - "8787:80"
+    volumes:
+      -  <your config path>/config.json:/pigallery2-release/config.json
+      -  <your db path>/sqlite.db:/pigallery2-release/sqlite.db
+      -  <your pictures path>:/pigallery2-release/demo/images

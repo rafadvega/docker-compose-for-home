@@ -16,6 +16,7 @@ You must sustitute \<variable-name> by your own parameters.
 * NextCloud
 * OpenVPN
 * Pi-hole
+* Pigallery
 * Plex server
 * Samba server
 * Transmission
@@ -38,6 +39,8 @@ You must sustitute \<variable-name> by your own parameters.
 | 5353  | Plex         | udp      |
 | 8443  | NextCloud    | tcp      |
 | 8080  | Pi-hole      | tcp      |
+| 8787  | PiGallery    | tcp      |
+| 8888  | PiGallery2   | tcp      |
 | 8989  | Cadvisor     | tcp      |
 | 9091  | Transmission | tcp      |
 | 9443  | OpenVPN AS   | tcp      |
